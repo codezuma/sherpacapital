@@ -1,6 +1,6 @@
-<div class="auth_form_wrapper flex">
+<div class="auth_form_wrapper flex" >
     <aside></aside>
-    <main >
-        <router-outlet  ></router-outlet>
+    <main [@routeAnimations]="prepareRoute(outlet)" >
+        <router-outlet #outlet="outlet" ></router-outlet>
     </main>
 </div>

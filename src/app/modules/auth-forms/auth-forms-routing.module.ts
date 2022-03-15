@@ -9,8 +9,8 @@ const routes: Routes = [
   component: AuthFormsComponent,
   children: [
     {path:'',redirectTo:'login',pathMatch:'full'},
-    { path: 'login', component: LoginFormComponent },
-    { path: 'signup', component: SignupFormComponent },
+    { path: 'login', component: LoginFormComponent, data: {animation: 'loginPage'} },
+    { path: 'signup', component: SignupFormComponent, data: {animation: 'signupPage'} },
   ]
 }
 ];
