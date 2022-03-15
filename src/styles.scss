@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+    user-select: none;
+    -webkit-tap-highlight-color: transparent ;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+@import url(./app/styles/color.scss);
+@import url(./app/styles/text.styles.scss);
+/* html, body { height: 100%; }
+ */body {
+      margin: 0;font-family: 'Plus Jakarta Sans';
+      position: fixed; height: 100% ;
+
+}  
+
+  html { height: 100vh; height: -webkit-fill-available; }
+  

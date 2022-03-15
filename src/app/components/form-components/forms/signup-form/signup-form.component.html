@@ -1,0 +1,37 @@
+<div class="auth-form-wrapper flex flex-direction-column">
+    <div class="switch-form-button-wrapper flex"> <button
+            class="switch-form-button body-regular secondary-body-color">Already a member ?<b  [routerLink]='"../login"' class="body-color">Log in</b></button>
+    </div>
+    <form [formGroup]="loginForm" class="flex flex-direction-column" (submit)="printValues()">
+        <h1 class="body-color heading1">Sign up</h1>
+        <span class="secondary-body-color caption-large">Sign up with Open account</span>
+
+        <div class="social-media-auth-wrapper">
+            <div class="button-wrapper flex align-items-center justify-content-center ">
+                <button class="button social-media-auth-button align-items-center justify-content-center flex">
+                    <span class="social-media-icon"><img
+                            src="../../../../../assets/icons/social-media/icons8-google.svg" alt="google-icon"></span>
+                    <span class="caption-large body-color">Google</span>
+                </button>
+
+                <button class="button social-media-auth-button align-items-center justify-content-center flex">
+                    <span class="social-media-icon"><img
+                            src="../../../../../assets/icons/social-media/icons8-apple-logo.svg"
+                            alt="google-icon"></span>
+                    <span class="body-color caption-large">Apple ID</span>
+                </button>
+            </div>
+        </div>
+        <hr>
+
+        <span class="secondary-body-color caption-large">Or continue with email address </span>
+
+        <div>
+           <app-input-field-text #emailFieldComponent [input]="emailInput"></app-input-field-text>
+        <app-input-field-password #passwordFieldComponent [input]="passwordInput"></app-input-field-password>
+        <span class="forgot_password_button secondary-body-color accent-color caption-large" #forgot_password>Forgot password?</span>
+        </div>
+        <input type="submit" value="Sign up" class="button-medium button-accent submit-button button body-regular">
+
+    </form>
+</div>
